@@ -2,22 +2,23 @@
 <html lang="en-US" class="scroll-smooth">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17958943090"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17958943090');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- FAVICON (Imagem do Produto) -->
     <link rel="icon" type="image/png" href="images/bioma-bottle.webp">
 
-    <!-- NOVO SCRIPT DE RASTREAMENTO -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17958943090"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17958943090');
+    </script>
+
+    <!-- RASTREAMENTO RAADS -->
     <script src="https://api.raads.com.br/code/8300-a7b316e2-3617-472b-b4dc-16052cb3affb"></script>
 
     <!-- ORGANIC SEO & METATAGS -->
@@ -49,6 +50,7 @@
                             500: '#105d3d', // Esmeralda Profundo
                             600: '#0c4a30',
                             800: '#063020',
+                            900: '#041f15',
                             950: '#020f0a',
                         },
                         gold: {
@@ -61,6 +63,7 @@
                     animation: {
                         'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                         'float': 'float 5s ease-in-out infinite',
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
                     keyframes: {
                         fadeInUp: {
@@ -77,88 +80,95 @@
         }
     </script>
     <style>
-        body { background-color: #fcfcf9; color: #041f15; -webkit-font-smoothing: antialiased; }
-        .premium-gradient { background: linear-gradient(135deg, #105d3d 0%, #063020 100%); }
+        body { background-color: #fdfdfb; color: #041f15; -webkit-font-smoothing: antialiased; }
+        .premium-gradient { background: linear-gradient(135deg, #0c4a30 0%, #041f15 100%); }
+        .hero-gradient { background: radial-gradient(circle at top right, #105d3d 0%, #041f15 100%); }
         .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f9f1d8 50%, #b8962e 100%); }
-        .gold-text-gradient { background: linear-gradient(135deg, #d4af37 0%, #b8962e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-header { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); }
+        .gold-text-gradient { background: linear-gradient(135deg, #e3c16f 0%, #d4af37 50%, #b8962e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-header { background: rgba(4, 31, 21, 0.85); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); }
         .reveal-on-scroll { opacity: 0; transform: translateY(25px); transition: all 0.8s ease-out; }
         .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
-        .cta-shadow { box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.5); }
+        .cta-shadow { box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.4); }
+        .glow-blob { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); z-index: 1; pointer-events: none; }
         details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 
 <body class="font-sans antialiased text-brand-950">
 
-    <!-- NAVIGATION -->
-    <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-brand-100/50">
+    <!-- NAVIGATION (EMERALD GLASS) -->
+    <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="flex items-center">
-                <span class="font-display text-2xl font-black text-brand-500 italic tracking-tighter">BIOMA<span class="text-gold-500">®</span></span>
+                <span class="font-display text-2xl font-black text-white italic tracking-tighter uppercase">BIOMA<span class="text-gold-500">®</span></span>
             </a>
-            <div class="hidden md:flex space-x-8 text-[11px] font-extrabold text-brand-900 uppercase tracking-widest">
-                <a href="#formula" class="hover:text-gold-600 transition-colors">The Formula</a>
-                <a href="#testimonials" class="hover:text-gold-600 transition-colors">Success Stories</a>
-                <a href="#faq" class="hover:text-gold-600 transition-colors">FAQ</a>
+            <div class="hidden md:flex space-x-8 text-[11px] font-extrabold text-brand-100 uppercase tracking-widest">
+                <a href="#formula" class="hover:text-gold-400 transition-colors">The Formula</a>
+                <a href="#testimonials" class="hover:text-gold-400 transition-colors">Reviews</a>
+                <a href="#faq" class="hover:text-gold-400 transition-colors">Support</a>
             </div>
-            <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="premium-gradient text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all shadow-md">
+            <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="gold-gradient text-brand-950 px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all shadow-lg">
                 Order Now
             </a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-brand-50/40">
+    <!-- HERO SECTION (RICH EMERALD THEME) -->
+    <section class="relative pt-12 pb-24 lg:pt-28 lg:pb-36 overflow-hidden hero-gradient text-white">
+        <!-- Glow Blobs for Depth -->
+        <div class="glow-blob top-0 right-0 -translate-y-1/2 translate-x-1/4 animate-pulse-slow"></div>
+        <div class="glow-blob bottom-0 left-0 translate-y-1/4 -translate-x-1/4 animate-pulse-slow" style="animation-delay: 2s"></div>
+
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 
                 <!-- Conteúdo de Texto e Ordem Mobile -->
                 <div class="text-center lg:text-left flex flex-col">
-                    <span class="inline-block self-center lg:self-start bg-white border border-gold-500/30 text-gold-700 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 shadow-sm">Advanced Microbiome Technology</span>
+                    <div class="inline-block self-center lg:self-start bg-gold-500/10 border border-gold-500/30 text-gold-400 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-8 backdrop-blur-sm">
+                        Clinical Microbiome Technology
+                    </div>
                     
-                    <h1 class="font-display text-5xl lg:text-8xl font-bold text-brand-950 leading-[1] mb-8 opacity-0 animate-fade-in-up order-1">
-                        Unlock Your <br>
-                        <span class="gold-text-gradient italic">Metabolic Peak.</span>
+                    <h1 class="font-display text-5xl lg:text-8xl font-bold leading-[1] mb-8 opacity-0 animate-fade-in-up order-1">
+                        Reclaim Your <br>
+                        <span class="gold-text-gradient italic">Vital Balance.</span>
                     </h1>
 
-                    <!-- FOTO MOBILE: Após o título, antes do texto -->
-                    <div class="lg:hidden w-full max-w-[320px] mx-auto mb-10 opacity-0 animate-fade-in-up order-2" style="animation-delay: 0.1s">
-                        <img src="images/bioma-bottle.webp" alt="Bioma Probiotic" class="w-full h-auto drop-shadow-2xl">
+                    <!-- FOTO MOBILE: Impacto visual direto no celular -->
+                    <div class="lg:hidden w-full max-w-[340px] mx-auto mb-10 opacity-0 animate-fade-in-up order-2" style="animation-delay: 0.1s">
+                        <img src="images/bioma-bottle.webp" alt="Bioma Probiotic" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(212,175,55,0.3)]">
                     </div>
 
-                    <p class="text-lg lg:text-xl text-gray-700 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0 opacity-0 animate-fade-in-up order-3" style="animation-delay: 0.2s">
-                        Stop struggling with persistent bloating and slow digestion. <strong>Bioma®</strong> rebalances your gut flora with medical-grade precision to ignite energy and natural metabolism support.
+                    <p class="text-lg lg:text-xl text-brand-100 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0 opacity-0 animate-fade-in-up order-3" style="animation-delay: 0.2s">
+                        Banish persistent bloating and ignite your metabolism. <strong>Bioma®</strong> delivers precision-engineered gut support to restore energy and digestive clarity naturally.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start opacity-0 animate-fade-in-up order-4" style="animation-delay: 0.4s">
                         <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="gold-gradient text-brand-950 px-12 py-5 rounded-2xl font-black text-lg cta-shadow hover:scale-105 transition-transform uppercase tracking-tight text-center">
-                            Claim My 35% Discount Today
+                            Claim 35% Off Today
                         </a>
                     </div>
                     
-                    <div class="mt-10 flex items-center justify-center lg:justify-start gap-8 text-[10px] font-black text-brand-900/50 uppercase tracking-[0.2em] order-5">
-                        <span class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> 60-Day Guarantee</span>
-                        <span class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> GMP Certified</span>
+                    <div class="mt-12 flex items-center justify-center lg:justify-start gap-8 text-[10px] font-black text-brand-200/50 uppercase tracking-[0.2em] order-5">
+                        <span class="flex items-center gap-2"><svg class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> 60-Day Guarantee</span>
+                        <span class="flex items-center gap-2"><svg class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg> USA Manufactured</span>
                     </div>
                 </div>
 
-                <!-- FOTO DESKTOP: Coluna da Direita -->
+                <!-- FOTO DESKTOP -->
                 <div class="hidden lg:flex justify-end relative">
-                    <div class="relative w-full max-w-[480px] animate-float">
-                        <div class="absolute -inset-10 bg-gold-400/10 rounded-full blur-[100px] z-0"></div>
-                        <img src="images/bioma-bottle.webp" alt="Bioma Probiotic Bottle" class="relative z-10 w-full drop-shadow-[0_45px_65px_rgba(0,0,0,0.3)]">
+                    <div class="relative w-full max-w-[520px] animate-float">
+                        <img src="images/bioma-bottle.webp" alt="Bioma Probiotic Bottle" class="relative z-10 w-full drop-shadow-[0_50px_80px_rgba(0,0,0,0.5)]">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TRUST LAYER -->
-    <div class="bg-white py-16 border-y border-brand-50">
+    <!-- TRUST LAYER (Subtle Gold Tint) -->
+    <div class="bg-gold-50/50 py-16 border-y border-gold-100">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-[11px] font-black text-brand-900/40 uppercase tracking-[0.4em] mb-12">As Endorsed by Health Experts & Publications</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
+            <p class="text-[11px] font-black text-brand-900/40 uppercase tracking-[0.4em] mb-12">Expertly Formulated & Clinically Reviewed</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
                 <span class="text-2xl font-display font-black tracking-tighter">VOGUE</span>
                 <span class="text-2xl font-display font-black tracking-tighter">Healthline</span>
                 <span class="text-2xl font-display font-black tracking-tighter italic">WELL+GOOD</span>
@@ -168,46 +178,48 @@
     </div>
 
     <!-- STRATEGIC CHOICE SECTION -->
-    <section id="formula" class="py-24 bg-brand-50">
+    <section id="formula" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
-                <h2 class="font-display text-4xl lg:text-6xl font-bold text-brand-950 mb-6 leading-tight">Tailored to Your Bio-Type.</h2>
-                <p class="text-xl text-gray-600">Choose the most effective way to start your gut reset today.</p>
+                <h2 class="font-display text-4xl lg:text-6xl font-bold text-brand-950 mb-6 leading-tight">Your Personalized Path to Gut Clarity.</h2>
+                <p class="text-xl text-gray-600">Choose how you'd like to begin your transformation today.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-                <div class="bg-white rounded-[3rem] p-12 border-2 border-brand-100 hover:border-gold-500 transition-all duration-500 group shadow-lg reveal-on-scroll">
-                    <div class="bg-brand-50 w-20 h-20 rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform">
+                <!-- Card DTC -->
+                <div class="bg-brand-50 rounded-[3rem] p-12 border-2 border-brand-100 hover:border-gold-500 transition-all duration-500 group shadow-lg reveal-on-scroll">
+                    <div class="bg-white w-20 h-20 rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform shadow-sm">
                         <svg class="w-10 h-10 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                     </div>
                     <h3 class="text-4xl font-display font-bold text-brand-950 mb-6">Buy Direct</h3>
-                    <p class="text-gray-600 mb-12 text-lg leading-relaxed">Best for those who are ready for results. Get Bioma® delivered straight to your doorstep at our lowest price.</p>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="block text-center py-6 bg-brand-900 text-gold-400 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-brand-950 transition-colors shadow-lg">Get 35% Discount</a>
+                    <p class="text-gray-600 mb-12 text-lg leading-relaxed">Ready for results? Secure your supply of Bioma® at the guaranteed lowest price with fast shipping.</p>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="block text-center py-6 premium-gradient text-gold-400 rounded-2xl font-black uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg">Unlock 35% Off</a>
                 </div>
 
+                <!-- Card Quiz -->
                 <div class="premium-gradient rounded-[3rem] p-12 border-2 border-gold-500/20 group shadow-2xl reveal-on-scroll" style="transition-delay: 0.1s">
                     <div class="bg-gold-500/20 w-20 h-20 rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform">
                         <svg class="w-10 h-10 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
-                    <h3 class="text-4xl font-display font-bold text-white mb-6">Find Your Gut Type</h3>
-                    <p class="text-brand-100 mb-12 text-lg leading-relaxed">Not sure? Take our 30-second assessment to find your personalized probiotic profile.</p>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/?uid=29074" class="block text-center py-6 gold-gradient text-brand-950 rounded-2xl font-black uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg">Start The Quiz</a>
+                    <h3 class="text-4xl font-display font-bold text-white mb-6">The Gut Quiz</h3>
+                    <p class="text-brand-100 mb-12 text-lg leading-relaxed">Discover your unique "Gut Type" in 30 seconds and receive a personalized metabolic protocol.</p>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/?uid=29074" class="block text-center py-6 gold-gradient text-brand-950 rounded-2xl font-black uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg">Start Assessment</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIALS (5 STARS) -->
-    <section id="testimonials" class="py-24 bg-white">
+    <!-- REVIEWS (5 STARS) -->
+    <section id="testimonials" class="py-24 bg-brand-50/50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-display text-4xl font-bold text-brand-950 mb-4">Real Customers, Real Results</h2>
-                <p class="text-gray-500">Over 12,500+ satisfied users in the USA & Canada.</p>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="font-display text-4xl lg:text-5xl font-bold text-brand-950 mb-4">Verified Success Stories</h2>
+                <p class="text-gray-500 text-lg">Real experiences from our community in the USA and Canada.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Review 1 -->
-                <div class="p-8 rounded-3xl border border-brand-50 bg-brand-50/20 reveal-on-scroll">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Michael -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -215,14 +227,17 @@
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-brand-900 italic font-medium mb-8 leading-relaxed">"The difference in my energy and digestion was noticeable within days. Finally, a supplement that actually does what it claims. Highly recommended for metabolic support."</p>
+                    <p class="text-brand-900 italic font-medium mb-10 leading-relaxed text-lg">"The difference in my energy and digestion was noticeable within days. Finally, a supplement that actually delivers on its promises."</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-1.png" alt="Michael D." class="w-10 h-10 rounded-full mr-3 border-2 border-gold-400">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">— Michael D., New York</p>
+                        <img src="images/testimonial-1.png" alt="Michael D." class="w-12 h-12 rounded-full mr-4 border-2 border-gold-400 object-cover">
+                        <div>
+                            <p class="font-bold text-brand-950">Michael D.</p>
+                            <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">New York, USA</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Review 2 -->
-                <div class="p-8 rounded-3xl border border-brand-50 bg-brand-50/20 reveal-on-scroll" style="transition-delay: 0.1s">
+                <!-- Sarah -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll" style="transition-delay: 0.1s">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -230,14 +245,17 @@
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-brand-900 italic font-medium mb-8 leading-relaxed">"Bloating used to ruin my afternoons. Bioma® solved it in less than a week. It's now a non-negotiable part of my morning routine."</p>
+                    <p class="text-brand-900 italic font-medium mb-10 leading-relaxed text-lg">"Bloating used to ruin my afternoons. Bioma® solved it in less than a week. It's now a staple in my morning routine."</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-2.png" alt="Sarah K." class="w-10 h-10 rounded-full mr-3 border-2 border-gold-400">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">— Sarah K., Toronto</p>
+                        <img src="images/testimonial-2.png" alt="Sarah K." class="w-12 h-12 rounded-full mr-4 border-2 border-gold-400 object-cover">
+                        <div>
+                            <p class="font-bold text-brand-950">Sarah K.</p>
+                            <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">Toronto, CA</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Review 3 -->
-                <div class="p-8 rounded-3xl border border-brand-50 bg-brand-50/20 reveal-on-scroll" style="transition-delay: 0.2s">
+                <!-- Linda -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll" style="transition-delay: 0.2s">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -245,10 +263,13 @@
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <p class="text-brand-900 italic font-medium mb-8 leading-relaxed">"Best decision for my metabolic health. I've tried many probiotics, but Bioma's 3-in-1 formula is on another level. The shipping to Florida was super fast."</p>
+                    <p class="text-brand-900 italic font-medium mb-10 leading-relaxed text-lg">"Best decision for my metabolic health. The 3-in-1 formula is on another level. Fast shipping to Florida!"</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-3.png" alt="Linda P." class="w-10 h-10 rounded-full mr-3 border-2 border-gold-400">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">— Linda P., Florida</p>
+                        <img src="images/testimonial-3.png" alt="Linda P." class="w-12 h-12 rounded-full mr-4 border-2 border-gold-400 object-cover">
+                        <div>
+                            <p class="font-bold text-brand-950">Linda P.</p>
+                            <p class="text-[10px] font-black uppercase tracking-widest text-brand-500">Florida, USA</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,60 +279,42 @@
     <!-- FAQ (EXPANDED) -->
     <section id="faq" class="py-24 premium-gradient text-white">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="font-display text-4xl font-bold text-center mb-16 gold-text-gradient">Support & Frequently Asked Questions</h2>
+            <h2 class="font-display text-4xl font-bold text-center mb-16 gold-text-gradient uppercase tracking-tight">Expert Support & FAQ</h2>
             <div class="space-y-4">
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
-                        How should I take Bioma® for best results?
+                    <summary class="flex items-center justify-between p-7 cursor-pointer font-bold select-none hover:bg-white/10">
+                        How should I take Bioma® for maximum absorption?
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        For optimal microbiome absorption, take two (2) capsules daily with 8oz of water. We recommend taking them in the morning on an empty stomach to kickstart your metabolic processes for the day.
+                    <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
+                        For best results, take two (2) capsules daily with 8oz of water. We recommend taking them in the morning before breakfast to optimize your metabolic and digestive processes throughout the day.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
-                        Is Bioma® suitable for those in the US and Canada?
+                    <summary class="flex items-center justify-between p-7 cursor-pointer font-bold select-none hover:bg-white/10">
+                        Is Bioma® available for immediate delivery in US/Canada?
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        Yes! We ship directly across the entire United States and Canada. All orders are processed in our domestic GMP-certified facilities to ensure the highest quality standards and fast delivery.
+                    <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
+                        Yes! We maintain localized inventory in domestic GMP-certified facilities. US orders typically arrive in 3-5 days, while Canadian orders take 7-10 business days.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
+                    <summary class="flex items-center justify-between p-7 cursor-pointer font-bold select-none hover:bg-white/10">
                         Does Bioma® require refrigeration?
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        No. Thanks to our advanced stabilization technology and delayed-release capsules, Bioma® is shelf-stable. You can store it in a cool, dry place without losing any potency of the active probiotic strains.
+                    <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
+                        No. Our advanced stabilization technology and delayed-release capsules ensure the active strains stay potent at room temperature. Simply store in a cool, dry place.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
-                        What if Bioma® doesn't work for me?
+                    <summary class="flex items-center justify-between p-7 cursor-pointer font-bold select-none hover:bg-white/10">
+                        What is your 60-day satisfaction guarantee?
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        We stand by our formula. Every order is protected by our 60-Day Money Back Guarantee. If you aren't completely satisfied with your digestive and metabolic results, simply contact our support team for a full refund.
-                    </div>
-                </details>
-                <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
-                        Are there any artificial fillers or GMOs?
-                        <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        Absolutely not. Bioma® is gluten-free, non-GMO, and contains zero artificial fillers, preservatives, or synthetic dyes. We believe in pure, clinical-grade ingredients for your health.
-                    </div>
-                </details>
-                <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-white/10">
-                        How long does shipping take?
-                        <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed text-sm">
-                        Most orders within the US arrive in 3-5 business days. Canadian orders typically arrive within 7-10 business days depending on customs and location.
+                    <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
+                        We are confident in Bioma®. If you aren't completely satisfied with your metabolic results within 60 days of purchase, contact our support team for a hassle-free refund.
                     </div>
                 </details>
             </div>
@@ -323,11 +326,11 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 border-b border-brand-50 pb-16">
                 <div class="col-span-1 md:col-span-2">
-                    <span class="font-display text-2xl font-black text-brand-500 italic block mb-6 uppercase">BIOMA<span class="text-gold-500">®</span></span>
-                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">Dedicated to advanced microbiome solutions. Our mission is to empower metabolic health through science-backed supplementation and natural gut restoration.</p>
+                    <span class="font-display text-2xl font-black text-brand-500 italic block mb-6 uppercase tracking-tighter">BIOMA<span class="text-gold-500">®</span></span>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">Leading the way in microbiome innovation. Our mission is to empower long-term health through pure, science-backed gut restoration.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px]">Information</h4>
+                    <h4 class="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px]">Legal Resources</h4>
                     <ul class="space-y-4 text-xs font-bold text-gray-400 uppercase tracking-tighter">
                         <li><a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="hover:text-brand-500 transition-colors">Privacy Policy</a></li>
                         <li><a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="hover:text-brand-500 transition-colors">Terms of Service</a></li>
@@ -335,22 +338,22 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px]">Market Presence</h4>
-                    <p class="text-xs text-gray-500 mb-4 font-bold uppercase tracking-widest text-brand-800">Authorized Independent Distributor • USA & CANADA 2026</p>
+                    <h4 class="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px]">Markets</h4>
+                    <p class="text-xs text-gray-500 mb-4 font-bold uppercase tracking-widest text-brand-800 italic">Authorized Independent Distributor • 2026</p>
                     <div class="flex gap-4">
                          <img src="https://img.icons8.com/color/48/000000/usa.png" class="w-5 h-5" alt="USA">
                          <img src="https://img.icons8.com/color/48/000000/canada.png" class="w-5 h-5" alt="Canada">
                     </div>
-                    <p class="mt-6 text-[10px] text-gray-400">Support: support@getbioma.com</p>
+                    <p class="mt-6 text-[10px] text-gray-400 font-bold uppercase">USA & CANADA Focus</p>
                 </div>
             </div>
             
             <div class="text-center">
-                <p class="text-[9px] text-gray-400 font-black tracking-[0.3em] uppercase mb-10">Google Ads Policy Disclosure & Independent Entity Notice</p>
+                <p class="text-[9px] text-gray-400 font-black tracking-[0.3em] uppercase mb-10">Google Ads Policy Disclosure & Independent Retailer Notice</p>
                 <div class="max-w-5xl mx-auto bg-brand-50/50 p-10 rounded-[2rem] text-[11px] text-gray-500 leading-relaxed text-justify border border-brand-100">
-                    <p class="mb-4"><strong>*Independent Notice:</strong> We are an authorized independent distributor and reseller of Bioma® products. This website is an authorized retail platform for the United States and Canada. Information on this site is provided for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
-                    <p class="mb-4"><strong>*FDA Disclaimer:</strong> The statements made regarding these products have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
-                    <p><strong>*Results Notice:</strong> Individual results will vary depending on your unique metabolic health, consistent use, and adherence to a balanced lifestyle. We do not guarantee specific weight loss or health outcomes.</p>
+                    <p class="mb-4"><strong>*Authorized Distribution:</strong> We are an authorized independent distributor and retailer of Bioma® products. This platform is an independent retail channel serving the United States and Canada. Information here is for informational purposes and is not a substitute for professional medical advice.</p>
+                    <p class="mb-4"><strong>*FDA Compliance:</strong> The statements made regarding these products have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before starting any new dietary supplement.</p>
+                    <p><strong>*Results Guarantee:</strong> Individual results will vary based on consistent use, metabolic baseline, and lifestyle. We stand by our 60-day satisfaction policy as stated in our terms.</p>
                 </div>
                 <p class="mt-12 text-[10px] text-gray-300 font-bold uppercase tracking-widest">&copy; 2026 Bioma Health Authorized Reseller. All Rights Reserved.</p>
             </div>
