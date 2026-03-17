@@ -47,7 +47,7 @@
                         brand: {
                             50: '#f0f7f4',
                             100: '#d1e6dd',
-                            500: '#105d3d', // Esmeralda Profundo
+                            500: '#105d3d', // Deep Emerald
                             600: '#0c4a30',
                             800: '#063020',
                             900: '#041f15',
@@ -56,7 +56,7 @@
                         gold: {
                             100: '#f9f1d8',
                             400: '#e3c16f',
-                            500: '#d4af37', // Dourado
+                            500: '#d4af37', // Gold
                             600: '#b8962e',
                         }
                     },
@@ -85,12 +85,13 @@
         .hero-gradient { background: radial-gradient(circle at top right, #105d3d 0%, #041f15 100%); }
         .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f9f1d8 50%, #b8962e 100%); }
         .gold-text-gradient { background: linear-gradient(135deg, #e3c16f 0%, #d4af37 50%, #b8962e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-header { background: rgba(4, 31, 21, 0.85); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); }
+        .glass-header { background: rgba(4, 31, 21, 0.9); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); }
         .reveal-on-scroll { opacity: 0; transform: translateY(25px); transition: all 0.8s ease-out; }
         .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
         .cta-shadow { box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.4); }
         .glow-blob { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); z-index: 1; pointer-events: none; }
         details > summary::-webkit-details-marker { display: none; }
+        .invert-white { filter: brightness(0) invert(1); }
     </style>
 </head>
 
@@ -100,7 +101,8 @@
     <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <a href="https://www.fasttrack37.com/PM7HK3TH/2FD4XB84/" class="flex items-center">
-                <span class="font-display text-2xl font-black text-white italic tracking-tighter uppercase">BIOMA<span class="text-gold-500">®</span></span>
+                <!-- LOGO IMAGEM ARRUAMDA -->
+                <img src="images/bioma-logo.svg" alt="Bioma Logo" class="h-8 md:h-10 w-auto invert-white">
             </a>
             <div class="hidden md:flex space-x-8 text-[11px] font-extrabold text-brand-100 uppercase tracking-widest">
                 <a href="#formula" class="hover:text-gold-400 transition-colors">The Formula</a>
@@ -122,7 +124,7 @@
         <div class="max-w-7xl mx-auto px-4 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 
-                <!-- Conteúdo de Texto e Ordem Mobile -->
+                <!-- Text Content & Mobile Ordering -->
                 <div class="text-center lg:text-left flex flex-col">
                     <div class="inline-block self-center lg:self-start bg-gold-500/10 border border-gold-500/30 text-gold-400 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-8 backdrop-blur-sm">
                         Clinical Microbiome Technology
@@ -133,8 +135,8 @@
                         <span class="gold-text-gradient italic">Vital Balance.</span>
                     </h1>
 
-                    <!-- FOTO MOBILE: Impacto visual direto no celular -->
-                    <div class="lg:hidden w-full max-w-[340px] mx-auto mb-10 opacity-0 animate-fade-in-up order-2" style="animation-delay: 0.1s">
+                    <!-- MOBILE PHOTO: Reduzido para 220px como solicitado -->
+                    <div class="lg:hidden w-full max-w-[220px] mx-auto mb-10 opacity-0 animate-fade-in-up order-2" style="animation-delay: 0.1s">
                         <img src="images/bioma-bottle.webp" alt="Bioma Probiotic" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(212,175,55,0.3)]">
                     </div>
 
@@ -154,7 +156,7 @@
                     </div>
                 </div>
 
-                <!-- FOTO DESKTOP -->
+                <!-- DESKTOP PHOTO -->
                 <div class="hidden lg:flex justify-end relative">
                     <div class="relative w-full max-w-[520px] animate-float">
                         <img src="images/bioma-bottle.webp" alt="Bioma Probiotic Bottle" class="relative z-10 w-full drop-shadow-[0_50px_80px_rgba(0,0,0,0.5)]">
@@ -218,7 +220,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Michael -->
+                <!-- Review 1 -->
                 <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -236,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sarah -->
+                <!-- Review 2 -->
                 <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll" style="transition-delay: 0.1s">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -254,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Linda -->
+                <!-- Review 3 -->
                 <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-brand-100 reveal-on-scroll" style="transition-delay: 0.2s">
                     <div class="flex text-gold-500 mb-6 space-x-1">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -276,7 +278,7 @@
         </div>
     </section>
 
-    <!-- FAQ (EXPANDED) -->
+    <!-- FAQ -->
     <section id="faq" class="py-24 premium-gradient text-white">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="font-display text-4xl font-bold text-center mb-16 gold-text-gradient uppercase tracking-tight">Expert Support & FAQ</h2>
@@ -287,7 +289,7 @@
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
-                        For best results, take two (2) capsules daily with 8oz of water. We recommend taking them in the morning before breakfast to optimize your metabolic and digestive processes throughout the day.
+                        For best results, take two (2) capsules daily with 8oz of water. We recommend taking them in the morning before breakfast.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
@@ -296,7 +298,7 @@
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
-                        Yes! We maintain localized inventory in domestic GMP-certified facilities. US orders typically arrive in 3-5 days, while Canadian orders take 7-10 business days.
+                        Yes! We maintain localized inventory in domestic GMP-certified facilities.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
@@ -305,7 +307,7 @@
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
-                        No. Our advanced stabilization technology and delayed-release capsules ensure the active strains stay potent at room temperature. Simply store in a cool, dry place.
+                        No. Our advanced stabilization technology and delayed-release capsules ensure the active strains stay potent at room temperature.
                     </div>
                 </details>
                 <details class="group bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all">
@@ -314,19 +316,20 @@
                         <svg class="h-5 w-5 transition-transform group-open:rotate-180 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="p-7 pt-0 text-brand-100/80 leading-relaxed text-sm border-t border-white/5 mt-4">
-                        We are confident in Bioma®. If you aren't completely satisfied with your metabolic results within 60 days of purchase, contact our support team for a hassle-free refund.
+                        We are confident in Bioma®. If you aren't completely satisfied with your metabolic results within 60 days of purchase, contact our support team.
                     </div>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER (FULL COMPLIANCE) -->
+    <!-- FOOTER -->
     <footer class="bg-white pt-24 pb-12 border-t border-brand-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 border-b border-brand-50 pb-16">
                 <div class="col-span-1 md:col-span-2">
-                    <span class="font-display text-2xl font-black text-brand-500 italic block mb-6 uppercase tracking-tighter">BIOMA<span class="text-gold-500">®</span></span>
+                    <!-- LOGO IMAGEM ARRUAMDA NO RODAPÉ -->
+                    <img src="images/bioma-logo.svg" alt="Bioma Logo" class="h-8 mb-6 brightness-0">
                     <p class="text-gray-500 text-sm leading-relaxed max-w-sm">Leading the way in microbiome innovation. Our mission is to empower long-term health through pure, science-backed gut restoration.</p>
                 </div>
                 <div>
@@ -361,7 +364,6 @@
     </footer>
 
     <script>
-        // Reveal Animations on Scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
